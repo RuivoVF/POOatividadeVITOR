@@ -1,0 +1,17 @@
+CREATE DATABASE BDprojeto3camadas;
+USE BDprojeto3camadas;
+
+CREATE TABLE tbl_Vendedores
+(
+     id              INT NOT NULL AUTO_INCREMENT PRIMARY KEY,   
+     vendedores      VARCHAR(40) NOT NULL,
+     agricultor      VARCHAR(200) NOT NULL
+);
+
+CREATE TABLE tbl_Funcionario
+(
+    codigo          INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nomeAgricultor  VARCHAR(30),
+    idVendedores    INT NOT NULL,
+    FOREIGN KEY(idVendedores) REFERENCES tbl_Vendedores(id)
+);
