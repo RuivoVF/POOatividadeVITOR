@@ -25,10 +25,5 @@ namespace Projeto_de_3_Camadas.Code.BLL
             else
                 return false;
         }
-
-        internal bool RealizarLogin(object loginDTO)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

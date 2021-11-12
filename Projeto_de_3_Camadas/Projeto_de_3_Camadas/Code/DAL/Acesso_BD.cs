@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -18,7 +19,7 @@ namespace Projeto_de_3_Camadas.Code.DAL
                 string conn = "Persist Security Info = false; " +
                               "server = localhost; " +
                               "database = BDprojeto3camadas; " +
-                              "uid = root; pwd=root";
+                              "uid = root; pwd=";
 
                 conexao = new MySqlConnection(conn);
                 conexao.Open();
