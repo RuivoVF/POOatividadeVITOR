@@ -1,0 +1,10 @@
+H:\Projeto_3camadas\Projeto_de_3_Camadas\Projeto_de_3_Camadas\bin\Debug\Projeto_de_3_Camadas.exe.config
+H:\Projeto_3camadas\Projeto_de_3_Camadas\Projeto_de_3_Camadas\bin\Debug\Projeto_de_3_Camadas.exe
+H:\Projeto_3camadas\Projeto_de_3_Camadas\Projeto_de_3_Camadas\bin\Debug\Projeto_de_3_Camadas.pdb
+H:\Projeto_3camadas\Projeto_de_3_Camadas\Projeto_de_3_Camadas\obj\Debug\Projeto_de_3_Camadas.csprojAssemblyReference.cache
+H:\Projeto_3camadas\Projeto_de_3_Camadas\Projeto_de_3_Camadas\obj\Debug\Projeto_de_3_Camadas.Properties.Resources.resources
+H:\Projeto_3camadas\Projeto_de_3_Camadas\Projeto_de_3_Camadas\obj\Debug\Projeto_de_3_Camadas.UI.FormsFuncionario.resources
+H:\Projeto_3camadas\Projeto_de_3_Camadas\Projeto_de_3_Camadas\obj\Debug\Projeto_de_3_Camadas.UI.Form_Loguin.resources
+H:\Projeto_3camadas\Projeto_de_3_Camadas\Projeto_de_3_Camadas\obj\Debug\Projeto_de_3_Camadas.csproj.GenerateResource.cache
+H:\Projeto_3camadas\Projeto_de_3_Camadas\Projeto_de_3_Camadas\obj\Debug\Projeto_de_3_Camadas.exe
+H:\Projeto_3camadas\Projeto_de_3_Camadas\Projeto_de_3_Camadas\obj\Debug\Projeto_de_3_Camadas.pdb

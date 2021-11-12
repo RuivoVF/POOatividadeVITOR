@@ -37,11 +37,13 @@
             this.txtAgricultor = new System.Windows.Forms.TextBox();
             this.txtVendedor = new System.Windows.Forms.TextBox();
             this.txtID = new System.Windows.Forms.TextBox();
+            this.dgvFuncionario = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionario)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(449, 77);
+            this.btnCadastrar.Location = new System.Drawing.Point(455, 26);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(132, 39);
             this.btnCadastrar.TabIndex = 0;
@@ -51,7 +53,7 @@
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(449, 215);
+            this.btnEditar.Location = new System.Drawing.Point(449, 136);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(138, 42);
             this.btnEditar.TabIndex = 1;
@@ -61,7 +63,7 @@
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(449, 338);
+            this.btnExcluir.Location = new System.Drawing.Point(449, 237);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(138, 40);
             this.btnExcluir.TabIndex = 2;
@@ -72,7 +74,7 @@
             // lblID
             // 
             this.lblID.AutoSize = true;
-            this.lblID.Location = new System.Drawing.Point(69, 52);
+            this.lblID.Location = new System.Drawing.Point(72, 26);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(18, 13);
             this.lblID.TabIndex = 3;
@@ -81,7 +83,7 @@
             // lblVendedor
             // 
             this.lblVendedor.AutoSize = true;
-            this.lblVendedor.Location = new System.Drawing.Point(33, 174);
+            this.lblVendedor.Location = new System.Drawing.Point(32, 108);
             this.lblVendedor.Name = "lblVendedor";
             this.lblVendedor.Size = new System.Drawing.Size(102, 13);
             this.lblVendedor.TabIndex = 4;
@@ -90,7 +92,7 @@
             // lblAgricultor
             // 
             this.lblAgricultor.AutoSize = true;
-            this.lblAgricultor.Location = new System.Drawing.Point(35, 304);
+            this.lblAgricultor.Location = new System.Drawing.Point(35, 200);
             this.lblAgricultor.Name = "lblAgricultor";
             this.lblAgricultor.Size = new System.Drawing.Size(100, 13);
             this.lblAgricultor.TabIndex = 5;
@@ -98,30 +100,40 @@
             // 
             // txtAgricultor
             // 
-            this.txtAgricultor.Location = new System.Drawing.Point(35, 349);
+            this.txtAgricultor.Location = new System.Drawing.Point(35, 237);
             this.txtAgricultor.Name = "txtAgricultor";
             this.txtAgricultor.Size = new System.Drawing.Size(100, 20);
             this.txtAgricultor.TabIndex = 6;
             // 
             // txtVendedor
             // 
-            this.txtVendedor.Location = new System.Drawing.Point(35, 227);
+            this.txtVendedor.Location = new System.Drawing.Point(34, 148);
             this.txtVendedor.Name = "txtVendedor";
             this.txtVendedor.Size = new System.Drawing.Size(100, 20);
             this.txtVendedor.TabIndex = 7;
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(35, 87);
+            this.txtID.Location = new System.Drawing.Point(35, 59);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(100, 20);
             this.txtID.TabIndex = 8;
+            this.txtID.TextChanged += new System.EventHandler(this.txtID_TextChanged);
+            // 
+            // dgvFuncionario
+            // 
+            this.dgvFuncionario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFuncionario.Location = new System.Drawing.Point(12, 283);
+            this.dgvFuncionario.Name = "dgvFuncionario";
+            this.dgvFuncionario.Size = new System.Drawing.Size(789, 166);
+            this.dgvFuncionario.TabIndex = 9;
             // 
             // FormsFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dgvFuncionario);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.txtVendedor);
             this.Controls.Add(this.txtAgricultor);
@@ -133,6 +145,7 @@
             this.Controls.Add(this.btnCadastrar);
             this.Name = "FormsFuncionario";
             this.Text = "FormsFuncionario";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -149,5 +162,6 @@
         private System.Windows.Forms.TextBox txtAgricultor;
         private System.Windows.Forms.TextBox txtVendedor;
         private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.DataGridView dgvFuncionario;
     }
 }

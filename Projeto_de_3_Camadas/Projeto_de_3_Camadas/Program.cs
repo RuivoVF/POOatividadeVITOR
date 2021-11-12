@@ -17,6 +17,7 @@ namespace Projeto_de_3_Camadas
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new UI.FormsFuncionario());
+            Application.Run(new UI.Form_Loguin());
         }
     }
 }

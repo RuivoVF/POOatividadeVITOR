@@ -13,7 +13,7 @@ namespace Projeto_de_3_Camadas.Code.BLL
     {
         Acesso_BD conexao = new Acesso_BD();
         string tabela = "tbl_Vendedores";
-        private object update;
+        
 
         public void Inserir (AgricultoresDTO agrDto)
         {
@@ -21,7 +21,7 @@ namespace Projeto_de_3_Camadas.Code.BLL
             conexao.ExecutarComando(inserir);
         }
 
-        public object Editar(AgricultoresDTO agrDto)
+        public void Editar(AgricultoresDTO agrDto)
         {
             string alterar = $"update {tabela} set vendedor = 'agrDto.Vendedor', agricultor = '{agrDto.Agricultor}' where id = '{agrDto.ID}';";
             conexao.ExecutarComando(alterar);                              

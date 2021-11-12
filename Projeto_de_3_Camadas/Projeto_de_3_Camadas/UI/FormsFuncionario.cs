@@ -27,8 +27,8 @@ namespace Projeto_de_3_Camadas.UI
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            agrdto.Vendedores = txtVendedores.Text;
-            agrdto.Agricultor = txtAgricultores.Text;
+            agrdto.Vendedores = txtVendedor.Text;
+            agrdto.Agricultor = txtAgricultor.Text;
 
             agrdto.Inserir(agrdto);
 
@@ -71,15 +71,20 @@ namespace Projeto_de_3_Camadas.UI
 
         private void Forms_Funcionario_Load(object sender, EventArgs e)
         {
-            dgvVendedor.DataSource = venbll.Listar;
+            dgvFuncionario.DataSource = venbll.Listar();
 
         }
 
         private void dgvVendedor_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            txtID.Text = dgvVendedor.Rows[e.RowIndex].Cells[0].Value.ToString();
-            txtVendedor.Text = dgvVendedor.Rows[e.RowIndex].Cells[1].Value.ToString();
-            txtAgricultor.Text = dgvVendedor.Rows[e.RowIndex].Cells[2].Value.ToString();
+            txtID.Text = dgvFuncionario.Rows[e.RowIndex].Cells[0].Value.ToString();
+            txtVendedor.Text = dgvFuncionario.Rows[e.RowIndex].Cells[1].Value.ToString();
+            txtAgricultor.Text = dgvFuncionario.Rows[e.RowIndex].Cells[2].Value.ToString();
+        }
+
+        private void txtID_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
