@@ -25,5 +25,16 @@ namespace Projeto_de_3_Camadas.Code.BLL
             else
                 return false;
         }
+
+        public string RetornarSenha(LoginDTO login)
+        {
+            string sql = $"select * from {tabela} where email='{login.Email}'";
+            DataTable dt = conexao.ExecutarGerenciamento(sql);
+
+            if (dt.Rows.Count > 0)
+                return dt.Rows[0]["senha"].ToString();
+            else
+                return "false";
+        }
     }
 }
